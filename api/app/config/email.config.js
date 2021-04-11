@@ -43,7 +43,7 @@ const Email = function(){
         msg = `
         Welcome to matcha. Please click the link below to activate your account:
         
-        http://${host.url}:${host.front_port}/activate/${userId}/${activationCode}`
+        http://${host.url}:3000/activate/${userId}/${activationCode}`
 
 
 

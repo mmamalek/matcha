@@ -6,10 +6,12 @@ const host = require('../../server');
 
 //console.log(host.localhost);
 var con = mysql.createConnection({
-    host: db.HOST,
-    user: db.USER,
-    password: db.PASSWORD,
-    database: db.DB
+  host: db.HOST,
+  user: db.USER,
+  password: db.PASSWORD,
+  database: db.DB,
+  socketPath: db.SOCKET,
+  port: db.PORT
 });
 /**
  * !DEFAULT ACCOUNT
@@ -116,7 +118,7 @@ const seed = new Seeder(
     db.HOST,
     db.USER,
     db.PASSWORD,
-    db.DB
+    db.DB,
 );
 
 (async () => {
