@@ -82,4 +82,4 @@ const server = app.listen(port, (localhost) => {
 require("./app/socketServer")(server)
 exports.host = `${myhost}:${port}`;
 exports.url = `${myhost}`;
-exports.front_port = 5000;
+exports.front_port = 3000;
